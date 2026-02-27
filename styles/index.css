@@ -70,15 +70,17 @@ body {background-color: #222;}
 #wrap .info .skill_list p img {width: 100%;}
 /* ===================================================== 3.project */
 #wrap .project_wrap {}
+#wrap .project_wrap {}
 #wrap .project_wrap h1 {}
 #wrap .project_wrap h1 img {}
 /* ===================================================== 3.공통 프로젝트 선택자 */
 #wrap .project_wrap .project {
-    width: calc(100% - (15px * 2)); margin: 0 auto 50px; }
+    width: calc(100% - (15px * 2)); margin: 0 auto 50px;
+}
 #wrap .project_wrap .project h2 {font-size: 1.13rem; font-weight: 600;}
 #wrap .project_wrap .project .mockup {width: 410px; height: 300px; border-radius: 10px; overflow: hidden;}
 #wrap .project_wrap .project .mockup img {width: 100%;}
-#wrap .project_wrap .project .project_info {margin-bottom: 0 0 24px;}
+#wrap .project_wrap .project .project_info {margin: 0 0 24px;}
 #wrap .project_wrap .project .project_info li {
     position: relative; padding-left: 8px;
     font-size: 0.88rem; line-height: 1.8;
