@@ -1,0 +1,54 @@
+/* responsive.css */
+@media screen and (min-width:600px) {
+    /* 1행 글자크기, 여백 등 */
+    #wrap .intro h1 span:nth-child(1) {font-size: 1.25rem;}
+    #wrap .intro h1 span:nth-child(2) {font-size: 1.75rem;}
+    #wrap .info .profile .photo {
+        width: 340px; height: 400px;
+    }
+    #wrap .info .profile .me li:nth-child(1) {font-size: 1.25rem;}
+    /* 3행 프로젝트 이미지 w100% */
+    #wrap .project_wrap .project {
+        width: calc(100% - (30px * 2));
+        margin: 0 auto 120px;
+    }
+    #wrap .project_wrap .project .title_thum h2 {margin: 0 0 16px;}
+    #wrap .project_wrap .project .title_thum .mockup {margin: 0;}
+    #wrap .project_wrap .project .title_thum .mockup img {
+        height: auto;/* 100% 덮어쓰기값으로 변경 */
+        width: 100%;
+    }
+    #wrap .project_wrap .project .title_thum h2 {font-size: 1.25rem;}
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap .graphic_wrap .graphic_container a {
+    width: 246px; height: 400px;
+    }
+    #wrap .project_wrap .project .detail .link a {padding: 14px 40px;}
+}/* 사용자가 보는 기기 너비가 600보다 크면 */
+@media screen and (min-width:840px) {
+    /* 2행 info -> 1행 2열 레이아웃 구조 변경 */
+    #wrap > .info {
+        height: auto; padding: 100px 0;
+        flex-flow: row nowrap;
+        justify-content: center; align-items: flex-start;
+    }
+    #wrap .info .details {display: block;}
+    #wrap .info .details dl {margin-bottom: 40px;}
+    #wrap .info .details dl dt {font-size: 1.25rem; font-weight: 600; margin-bottom: 8px;}
+    #wrap .info .details dl dd {line-height: 1.8;}
+    /* 3행 web_project -> 1행 2열 레이아웃 구조 변경 */
+    #wrap .project_wrap .project {
+        width: calc(100% - (60px * 2));
+        display: flex; flex-flow: row nowrap;
+        justify-content: center; align-items: flex-end;
+        gap: 40px;
+    }
+    
+    #wrap .project_wrap .project .detail .link {justify-content: flex-start;}
+    #wrap .project_wrap .project .title_thum .mockup {height: 100%;}
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap .graphic_wrap .graphic_container {margin: 0 auto 120px;}
+    #wrap .project_wrap .graphic_wrap .graphic_container a {
+        width: 298px; height: 500px;
+    }
+}/* 사용자가 보는 기기 너비가 840보다 크면 */
