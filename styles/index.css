@@ -1,3 +1,10 @@
+/* 
+ * GitHub Repository Phishing Alert Appeal & Project Verification
+이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+This CSS is part of a student project. 
+Any resemblance to real-world commercial sites is purely for design practice.
+*/
+
 /* 모바일 기준 w440*/
 html {scroll-behavior: smooth;} /* 스크롤 애니메이션 효과 */
 /* Firefox */
@@ -20,6 +27,19 @@ body {background-color: #222;}
     /* overflow-X: hidden;  *//* x축 나간 요소와 가로스크롤 숨기기 */
     /* height: 100vh; */
 }
+#wrap header {
+    position: fixed;
+    width: 100%; z-index: 999; left: 0; top: 0;
+    text-align:center;
+}
+#wrap header #gnb {
+    display: flex; flex-flow: row nowrap;
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    gap: 40px;
+}
+#wrap header #gnb li {}
+#wrap header #gnb li a {line-height: 80px;}
 #wrap .info,
 #wrap .project_wrap .project {
     max-width: 1400px;
